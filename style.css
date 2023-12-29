@@ -1,0 +1,62 @@
+body {
+    padding: 4%;
+    background-color: #4f4f4f;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: #53c64f;
+}
+
+ul {
+    list-style: none;
+    padding: 1% 34% 0 39%;
+    /* padding: 4%; */
+
+    text-align: left;
+    color: rgb(190 190 190);
+    display: flex;
+    flex-direction: column; /* Display list items in a column */
+    /* align-items: center; */
+}
+li {
+    counter-increment: my-counter;
+    margin-bottom: 4%;
+    font-weight: bolder;
+    position: relative;
+}
+
+li:before {
+    content: counter(my-counter) ". ";
+    position: absolute;
+    left: -2em; /* Adjust as needed */
+}
+
+div {
+    width: 40%;
+    margin: 1% auto;
+}
+
+img {
+    display: block;
+    width: 100%; /* Set the width to 100% of the container */
+}
+
+button {
+    display: block;
+    margin: 2% auto; /* Center the button */
+    padding: 10px 20px; /* Add padding for a better look */
+    font-size: 1rem;
+    background-color: #53c64f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #398c3f; /* Change color on hover */
+}
